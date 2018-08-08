@@ -18,3 +18,11 @@ spring:
    url: jdbc:mysql:///spring?useSSL=true
    username: root
    password: root
+   hikari:
+    minimum-dile: 2
+    maximum-pool-size: 10
+    pool-name: springcloud-mysql-connetction-pool
+    idle-timeout: 500
+    connection-timeout: 1000
+    max-lifetime: 600000
+
