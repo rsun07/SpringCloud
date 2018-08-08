@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>springcloud-api</module>
+        <module>springcloud-entity</module>
         <module>springcloud-service</module>
     </modules>
 

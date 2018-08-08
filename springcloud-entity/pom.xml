@@ -8,7 +8,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>springcloud-api</artifactId>
+	<artifactId>springcloud-entity</artifactId>
 
 	<dependencies>
 		<dependency>
