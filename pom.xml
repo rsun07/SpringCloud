@@ -10,6 +10,7 @@
     <modules>
         <module>springcloud-entity</module>
         <module>springcloud-service</module>
+        <module>springcloud-frontend</module>
     </modules>
 
     <properties>
