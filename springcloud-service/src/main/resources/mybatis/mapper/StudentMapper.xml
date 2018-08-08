@@ -12,7 +12,7 @@
     </insert>
 
     <select id="selectById" resultType="Student">
-        select id, name, score from student where id={#id} limit 1;
+        select id, name, score from student where id=#{id} limit 1
     </select>
 
     <select id="selectAll" resultType="Student">

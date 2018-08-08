@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication // same as @Configuration @EnableAutoConfiguration @ComponentScan
-public class WebServerApp {
+public class WebServiceApp {
     public static void main(String[] args) {
-        SpringApplication.run(WebServerApp.class, args);
+        SpringApplication.run(WebServiceApp.class, args);
     }
 }
