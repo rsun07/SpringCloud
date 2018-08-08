@@ -1,0 +1,20 @@
+# must have space after every colon (:) to make sure it works
+server:
+ port: 8001
+
+mybatis:
+ config-location: classpath:mybatis/mybatis.cfg.xml
+ type-aliases-package: pers.xiaoming.springcloud.entity
+ mapper-locations:
+ - classpath:mybatis/mapper/**/*.xml
+
+# before 'type', 'driver-class-name', there shouldn't be any tab, only one space make it work
+spring:
+  application:
+   name: springcloud-webservice
+  datasource:
+   type: com.zaxxer.hikari.HikariDataSource
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql:///spring?useSSL=true
+   username: root
+   password: root
