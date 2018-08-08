@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import pers.xiaoming.springcloud.entity.Student;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -36,7 +35,7 @@ public class StudentConsumerController {
     }
 
     @SuppressWarnings("unchecked")
-    @RequestMapping(value = "/id/{id}")
+    @RequestMapping(value = "/all")
     @GetMapping
     public List<Student> getAll() {
         return restTemplate.getForObject(REST_URL_HOST + STUDENT_RESOURCE + "/all", List.class);
