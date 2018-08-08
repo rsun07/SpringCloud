@@ -1,4 +1,4 @@
-package pers.xiaoming.springcloud.api.entity;
+package pers.xiaoming.springcloud.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
