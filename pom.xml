@@ -29,6 +29,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--springcloud dependencies-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -37,6 +38,7 @@
                 <scope>import</scope>
             </dependency>
 
+            <!--spring boot dependencies-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -90,6 +92,7 @@
                 <!--<artifactId>logback-core</artifactId>-->
                 <!--<version>${lombok.version}</version>-->
             <!--</dependency>-->
+
 
             <!-- test dependencies -->
             <dependency>
