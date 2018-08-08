@@ -6,6 +6,9 @@
 
     <insert id="create">
         insert into student(name, score) values (#{name}, #{score})
+        <selectKey resultType="int" keyProperty="id" order="AFTER">
+            select @@identity
+        </selectKey>
     </insert>
 
     <select id="selectById" resultType="Student">
