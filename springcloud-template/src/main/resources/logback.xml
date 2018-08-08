@@ -9,9 +9,9 @@
 		</layout>
 	</appender>
 
-	<logger name="pers.xiaoming.javamvc.ssm.annotation" level="INFO"/>
+	<logger name="pers.xiaoming.springcloud" level="INFO"/>
 	<logger name="org.springframework" level="DEBUG"/>
-	<logger name="org.mybatis" level="ERROR"/>
+	<logger name="org.mybatis" level="DEBUG"/>
 
 	<root level="DEBUG">
 		<appender-ref ref="STDOUT" />
