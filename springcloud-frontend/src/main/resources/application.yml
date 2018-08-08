@@ -1,0 +1,3 @@
+# must have space after every colon (:) to make sure it works
+server:
+ port: 8080
