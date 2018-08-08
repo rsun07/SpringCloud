@@ -11,6 +11,7 @@
         <module>springcloud-entity</module>
         <module>springcloud-service</module>
         <module>springcloud-frontend</module>
+        <module>springcloud-eureka</module>
     </modules>
 
     <properties>

@@ -1,0 +1,11 @@
+server: 
+  port: 7001
+ 
+eureka: 
+  instance:
+    hostname: localhost
+  client: 
+    register-with-eureka: false     #false means don't register eureka itself to eureka
+    fetch-registry: false     #false means this eureka service is the register center, no need to search other service (not a consumer)
+    service-url: 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
