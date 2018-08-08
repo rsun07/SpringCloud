@@ -9,10 +9,10 @@ mybatis:
 
 spring:
   application:
-    name: springcloud-service
+    name: springcloud-webservice
   datastore:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql:///spring
+    url: jdbc:mysql:///spring?useSSL=true
     username: root
     password: root

@@ -7,7 +7,7 @@ import java.util.List;
 
 @Mapper
 public interface IStudentDao {
-    Student create(Student student);
+    void create(Student student);
 
     Student selectById(int id);
 

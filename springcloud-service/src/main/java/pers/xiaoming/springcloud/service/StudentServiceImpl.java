@@ -13,8 +13,8 @@ public class StudentServiceImpl implements StudentService {
     private IStudentDao dao;
 
     @Override
-    public Student create(Student student) {
-        return dao.create(student);
+    public void create(Student student) {
+        dao.create(student);
     }
 
     @Override

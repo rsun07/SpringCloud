@@ -5,7 +5,7 @@ import pers.xiaoming.springcloud.entity.Student;
 import java.util.List;
 
 public interface StudentService {
-    Student create(Student student);
+    void create(Student student);
 
     Student get(int id);
 
