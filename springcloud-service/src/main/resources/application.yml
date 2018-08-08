@@ -1,0 +1,18 @@
+server:
+  port: 8001
+
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  type-aliases-package: pers.xiaoming.springcloud.entity
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml
+
+spring:
+  application:
+    name: springcloud-service
+  datastore:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///spring
+    username: root
+    password: root
