@@ -26,3 +26,10 @@ spring:
     connection-timeout: 1000
     max-lifetime: 600000
 
+eureka:
+  client: #Register to eureka service list
+   service-url:
+     defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: springcloud-webservice-8001
+    prefer-ip-address: true
