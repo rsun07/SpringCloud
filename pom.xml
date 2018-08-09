@@ -10,7 +10,7 @@
     <modules>
         <module>springcloud-entity</module>
         <module>springcloud-service</module>
-        <module>springcloud-frontend</module>
+        <module>springcloud-consumer</module>
         <module>springcloud-eureka</module>
     </modules>
 
