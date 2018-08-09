@@ -40,4 +40,9 @@ public class StudentConsumerController {
     public List<Student> getAll() {
         return restTemplate.getForObject(REST_URL_HOST + STUDENT_RESOURCE + "/all", List.class);
     }
+
+    @RequestMapping(value = "/discovery")
+    public Object discovery() {
+        return restTemplate.getForObject(REST_URL_HOST + STUDENT_RESOURCE + "/discovery", Object.class);
+    }
 }
