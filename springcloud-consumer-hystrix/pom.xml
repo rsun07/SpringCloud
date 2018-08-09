@@ -8,7 +8,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>springcloud-consumer</artifactId>
+	<artifactId>springcloud-consumer-hystrix</artifactId>
 
 	<dependencies>
 		<dependency>
@@ -35,6 +35,11 @@
 					<artifactId>jackson-core</artifactId>
 				</exclusion>
 			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
 		</dependency>
 
 		<dependency>

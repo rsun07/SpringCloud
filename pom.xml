@@ -11,6 +11,7 @@
         <module>springcloud-entity</module>
         <module>springcloud-service</module>
         <module>springcloud-consumer</module>
+        <module>springcloud-consumer-hystrix</module>
         <module>springcloud-eureka</module>
     </modules>
 

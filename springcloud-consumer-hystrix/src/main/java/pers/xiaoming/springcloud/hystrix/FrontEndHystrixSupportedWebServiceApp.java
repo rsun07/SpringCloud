@@ -1,4 +1,4 @@
-package pers.xiaoming.springcloud;
+package pers.xiaoming.springcloud.hystrix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,11 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class FrontEndWebServiceApp {
+@EnableCircuitBreaker
+public class FrontEndHystrixSupportedWebServiceApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(FrontEndWebServiceApp.class, args);
+        SpringApplication.run(FrontEndHystrixSupportedWebServiceApp.class, args);
     }
 
     @Bean
