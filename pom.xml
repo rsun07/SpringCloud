@@ -12,6 +12,7 @@
         <module>springcloud-service</module>
         <module>springcloud-consumer</module>
         <module>springcloud-consumer-hystrix</module>
+        <module>springcloud-consumer-hystrix-dashboard</module>
         <module>springcloud-eureka</module>
     </modules>
 
