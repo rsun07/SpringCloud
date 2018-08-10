@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import pers.xiaoming.springcloud.entity.Student;
+import pers.xiaoming.springcloud.hystrix.http.GetStudentById;
 
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class StudentConsumerController {
     @RequestMapping(value = "/id/{id}")
     @GetMapping
     public Student get(@PathVariable("id") int id) {
-        return restTemplate.getForObject(REST_URL_HOST + STUDENT_RESOURCE + "/id/" + id, Student.class);
+        return new GetStudentById(restTemplate, id).execute();
     }
 
     @SuppressWarnings("unchecked")
