@@ -13,6 +13,7 @@
         <module>springcloud-consumer</module>
         <module>springcloud-consumer-hystrix</module>
         <module>springcloud-consumer-hystrix-dashboard</module>
+        <module>springcloud-consumer-feign</module>
         <module>springcloud-eureka</module>
     </modules>
 
